@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization Dashboard</title>
+    <!-- Include CSS and JS libraries for visualization (e.g., Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="chartCanvas"></canvas>
+
+    <script>
+        // Data for the bar chart
+        const data = {
+            labels: [],
+            datasets: [{
+                label: 'Intensity',
+                data: [10, 20, 30, 40, 10],
+                backgroundColor: 'rgba(75, 192, 192, 0.8)'
+            }]
+        };
+
+
+
+
+
+        // Configuration options for the chart
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+
+
+
+        
+
+        // Create the bar chart
+        const ctx = document.getElementById('chartCanvas').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization Dashboard</title>
+    <!-- Include CSS and JS libraries for visualization (e.g., Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="chartCanvas"></canvas>
+
+    <script>
+        // Data for the bar chart
+        const data = {
+            labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
+            datasets: [{
+                label: 'Intensity',
+                data: [10, 20, 30, 40, 50],
+                backgroundColor: 'rgba(75, 192, 192, 0.8)'
+            }]
+        };
+
+        // Configuration options for the chart
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Create the bar chart
+        const ctx = document.getElementById('chartCanvas').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+</body>
+</html>
